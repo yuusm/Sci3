@@ -1,0 +1,65 @@
+<!DOCTYPE html> 
+<html> 
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>sci3 club</title>
+</head>
+
+<body style="background-color:#98cfe3;"> 
+
+	<header class="main-header" style="background-color:#b8e4f5;
+	color:#1e5287 ;">
+	<h1>Sci ³Science Club</h1>
+	<h2>Exploring Science, Challenge the Curious</h2>
+	</header>
+
+ <h3 style="font-family: Georgia, serif;">
+  <a style="background-color:#c7f3ff; color:#3068d1; padding:12px 25px; font-size:18px; text-decoration:none;" href="home.html">Introduction</a> 
+  <a style="background-color:#c7f3ff; color:#3068d1; padding:12px 25px; font-size:18px; text-decoration:none;" href="Join.html">Join</a> 
+  <a style="background-color:#c7f3ff; color:#3068d1; padding:12px 25px; font-size:18px; text-decoration:none;" href="Quiz.html">Quiz</a>
+</h3>
+
+
+<hr>
+
+<script>
+  function showGreeting() {
+    var name = document.getElementById("name").value;
+    document.getElementById("greeting").innerHTML =
+      "🎉 Hello <b>" + name + "</b>! <br>Welcome to the Sci³ Club 🚀";
+  }
+</script>
+
+<h2 style="color:#1e5287; font-family:Arial;">Sci ³ Club Application Form</h2>
+
+<form onsubmit="showGreeting(); return false;"
+      style="background-color:#c7f3ff; padding:20px; width:320px; border-radius:10px; margin:auto; font-family:Arial;">
+
+  <label style="font-weight:bold; color:#1e5287;">Full Name:</label><br>
+  <input type="text" id="name" name="name" placeholder="Enter your name"
+         style="width:90%; padding:8px; margin:5px;"><br>
+
+  <label style="font-weight:bold; color:#1e5287;">Student ID:</label><br>
+  <input type="text" name="id" placeholder="Enter your ID"
+         style="width:90%; padding:8px; margin:5px;"><br>
+
+  <label style="font-weight:bold; color:#1e5287;">Class:</label><br>
+  <input type="text" name="class" placeholder="Enter your class"
+         style="width:90%; padding:8px; margin:5px;"><br><br>
+
+  <input type="submit" value="Apply"
+         style="background-color:#3068d1; color:white; border:none; padding:10px 20px; cursor:pointer; border-radius:5px;">
+</form>
+
+<p id="greeting" 
+   style="font-size:18px; color:#1e5287; margin-top:15px; font-family:Arial;
+          background-color:#e6f7ff; display:inline-block; padding:10px 20px; border-radius:8px;">
+</p>
+
+<hr>
+
+<h2 style="color:#1e5287; font-family:Arial;"> Posters</h2>
+
+<img src="poster1.jpg" style="width:250px; border-radius:10px; margin:10px;">
+<img src="poster2.jpg" style="width:250px; border-radius:10px; margin:10px;">
